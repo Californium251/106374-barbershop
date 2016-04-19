@@ -28,166 +28,169 @@
 							<a href="#">Информация</a>
 						</li>
 						<li>
-							<a class="Select" href="#">Магазин</a>
+							<a class="select" href="#">Магазин</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#">Контакты</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
-			<div class="userblock">
+			<div class="header-user">
 				<a class="login" href="#">Войти</a>
 			</div>
 		</header>
 		<main class="container">
-			<section class="second-nav">
-				<h1>Средства для ухода</h1>
-				<div class="breadcrumbs">
-					<ul>
-						<li>
-							<a href="#">Главная</a>
-						</li>
-						<li>
-							<a href="#">Магизин</a>
-						</li>
-						<li>
-							<a class="selected" href="#">Средства для ухода</a>
-						</li>
-					</ul>
-				</div>
-			</section>
+			<h1 class="shop-header">Средства для ухода</h1>
+			<ul class="breadcrumbs">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Магазин</a>
+				</li>
+				<li>
+					<a class="selected" href="#">Средства для ухода</a>
+				</li>
+			</ul>
 			<section class="parameters">
-				<div class="producer">
-					<h3>Производитель</h3>
-					<form method="post">
-						<input type="checkbox" value="BAXTER OF CALIFORNIA" checked>BAXTER OF CALIFORNIA
-						<input type="checkbox" value="MR NATTY">MR NATTY
-						<input type="checkbox" value="Suavecito" checked>SUAVECITO
-						<input type="checkbox" value="MALIN+GOETZ">MALIN+GOETZ
-						<input type="checkbox" value="MURRAY'S">MURRAY'S
-						<input type="checkbox" value="AMERICAN CREW" checked>AMERICAN CREW
-					</form>
-				</div>
-				<div class="article-group">
-					<h3>Группа товаров</h3>
-					<form method="post">
-						<input type="radio" value="Бритвенные принадлежности">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
-						<input type="radio" value="Средства для ухода">СРЕДСТВА ДЛЯ УХОДА
-						<input type="radio" value="Аксессуары">АКСЕССУАРЫ
-					</form>
-				</div>
-				<a class="btn" href="#">Показать</a>
+				<form class="parameters-form" method="post">
+					<div class="settings">
+						<h3 class="settings-header">Производитель</h3>
+							<input class="form-checkbox" type="checkbox" value="" id="filter-baxter" checked>
+							<label class="form-label" for="filter-baxter">BAXTER OF CALIFORNIA</label>
+							<input class="form-checkbox" type="checkbox" value="" id="filter-natty">
+							<label class="form-label" for="filter-natty">MR NATTY</label>
+							<input class="form-checkbox" type="checkbox" value="" id="filter-suavecito" checked>
+							<label class="form-label" for="filter-suavecito">SUAVECITO</label>
+							<input class="form-checkbox" type="checkbox" value="" id="filter-malin">
+							<label class="form-label" for="filter-malin">MALIN+GOETZ</label>
+							<input class="form-checkbox" type="checkbox" value="" id="filter-murray">
+							<label class="form-label" for="filter-murray">MURRAY'S</label>
+							<input class="form-checkbox" type="checkbox" value="" id="filter-american-crew" checked>
+							<label class="form-label" for="filter-american-crew">AMERICAN CREW</label>
+					</div>
+					<div class="settings">
+						<h3 class="settings-header">Группа товаров</h3>
+						<input class="form-radio" type="radio" value="" id="filter-shaving">
+						<label class="form-label" for="filter-shaving">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+						<input class="form-radio" type="radio" value="" id="filter-routine">
+						<label class="form-label" for="filter-routine">СРЕДСТВА ДЛЯ УХОДА</label>
+						<input class="form-radio" type="radio" value="" id="filter-accesoires">
+						<label class="form-label" for="filter-accesoires">АКСЕССУАРЫ</label>
+					</div>
+					<input class="btn" type="submit" href="#">Показать</a>
+				</form>
 			</section>
 			<section class="article-list">
 				<article class="article-item">
 					<img src="http://placehold.it/220x165" alt="Набор для путешествий BAXTER OF CALIFORNIA">
-					<p class="article-description">
+					<a class="article-description">
 						Набор для путешествий<br>
 						BAXTER OF CALIFORNIA
-					</p>
+					</a>
 					<div>
 						<div class="price">
 							2900 РУБ.
 						</div>
-						<a class="btn buy" href="#">Купить</a>
+						<a class="btn-buy" href="#">Купить</a>
 					</div>
 				</article>
 				<article class="article-item">
 					<img src="http://placehold.it/220x165" alt="Увлажняющий кондиционер BAXTER OF CALIFORNIA">
-					<p class="article-description">
+					<a class="article-description">
 						Увлажняющий кондиционер<br>
 						BAXTER OF CALIFORNIA
-					</p>
+					</a>
 					<div>
 						<div class="price">
 							750 РУБ.
 						</div>
-						<a class="btn buy" href="#">Купить</a>
+						<a class="btn-buy" href="#">Купить</a>
 					</div>
 				</article>
 				<article class="article-item">
 					<img src="http://placehold.it/220x165" alt="Гель для волос SUAVECITO">
-					<p class="article-description">
+					<a class="article-description">
 						Гель для волос<br>
 						SUAVECITO
-					</p>
+					</a>
 					<div>
 						<div class="price">
 							290 РУБ.
 						</div>
-						<a class="btn buy" href="#">Купить</a>
+						<a class="btn-buy" href="#">Купить</a>
 					</div>
 				</article>
 				<article class="article-item">
 					<img src="http://placehold.it/220x165" alt="Глина для укладки волос AMERICAN CREW">
-					<p class="article-description">
+					<a class="article-description">
 						Глина для укладки волос<br>
 						AMERICAN CREW
-					</p>
+					</a>
 					<div>
 						<div class="price">
 							500 РУБ.
 						</div>
-						<a class="btn buy" href="#">Купить</a>
+						<a class="btn-buy" href="#">Купить</a>
 					</div>
 				</article>
 				<article class="article-item">
 					<img src="http://placehold.it/220x165" alt="Гель для волос AMERICAN CREW">
-					<p class="article-description">
+					<a class="article-description">
 						Гель для волос<br>
 						AMERICAN CREW
-					</p>
+					</a>
 					<div>
 						<div class="price">
 							300 РУБ.
 						</div>
-						<a class="btn buy" href="#">Купить</a>
+						<a class="btn-buy" href="#">Купить</a>
 					</div>
 				</article>
 				<article class="article-item">
 					<img src="http://placehold.it/220x165" alt="Гель для волос AMERICAN CREW">
-					<p class="article-description">
+					<a class="article-description">
 						Гель для волос<br>
 						AMERICAN CREW
-					</p>
+					</a>
 					<div>
 						<div class="price">
 							300 РУБ.
 						</div>
-						<a class="btn buy" href="#">Купить</a>
+						<a class="btn-buy" href="#">Купить</a>
 					</div>
 				</article>
 				<article class="article-item">
 					<img src="http://placehold.it/220x165" alt="Набор для бритья BAXTER OF CALIFORNIA">
-					<p class="article-description">
+					<a class="article-description">
 						Набор для бритья<br>
 						BAXTER OF CALIFORNIA
-					</p>
+					</a>
 					<div>
 						<div class="price">
 							3900 РУБ.
 						</div>
-						<a class="btn buy" href="#">Купить</a>
+						<a class="btn-buy" href="#">Купить</a>
 					</div>
 				</article>
+				<div class="pages">
+					<ul>
+						<li>
+							<a class="page-btn" href="#">1</a>
+						</li>
+						<li>
+							<a class="page-btn" href="#">2</a>
+						</li>
+						<li>
+							<a class="page-btn" href="#">3</a>
+						</li>
+						<li>
+							<a class="page-btn" href="#">4</a>
+						</li>
+					</ul>
+				</div>
 			</section>
-			<div class="pages">
-				<ul>
-					<li>
-						<a class="page-btn" href="#">1</a>
-					</li>
-					<li>
-						<a class="page-btn" href="#">2</a>
-					</li>
-					<li>
-						<a class="page-btn" href="#">3</a>
-					</li>
-					<li>
-						<a class="page-btn" href="#">4</a>
-					</li>
-				</ul>
-			</div>
 		</main>
 		<footer class="main-footer">
 			<div class="container">
